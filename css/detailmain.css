@@ -1,0 +1,115 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1;
+	font: 12px "microsoft yahei", Tahoma, Arial, Helvetica, Sans-serif;
+	color: #666;
+	padding: 0px
+	margin: 0px;
+}
+a {
+	color: #666;
+	text-decoration: none;
+	outline: none;
+}
+ .content {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ws {
+	width: 990px;
+}
+/*fixeder*/
+
+.hd .fixed {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	width: 1000px;
+	z-index: 999;
+	background-color: #f2f2f2;
+	border-bottom-color: #ccc;
+	border-right-color: #ccc;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+.detailMain .taber .hd {
+	border: 1px solid #ffcccc;
+	border-bottom: none;
+	height: 38px;
+	background: #ffffff;
+}
+
+.detailMain .tabNav {
+	float: left;
+	margin: 0 15px;
+}
+
+.detailMain .tabNav a {
+	display: block;
+	border-bottom: 2px solid #ffffff;
+	height: 36px;
+	line-height: 38px;
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+}
+.detailMain .tabNav.on a {
+	border-bottom-color: #cd9967;
+	color: #cd9967;
+}
+.detailMain .tabNav a:hover {
+	color: #cd9967;
+	text-decoration: none;
+}
+.detailMain .hd .more {
+	float: right;
+	margin: 2px 2px 0 0;
+}
+
+
+.detailMain .more a{
+	font-size:17px;
+	color:#FFF;
+	background-color:#cd9967;
+	border:6px solid #cd9967;
+	line-height:35px;
+	
+}
+.detailMain .more a:hover{
+	background-color:#c18e5c;
+	border:6px solid #c18e5c;
+	
+}
+
+.detailMain .hd .more img{
+	margin-right:5px;
+	margin-bottom:-3px;
+	width:19px;
+}
+
+.detailMain .brief {
+	border: 1px solid #ffcccc;
+	border-top: none;
+	padding: 20px;
+	width: 958px;
+	background-color: #fff9f9;
+	overflow: hidden;
+	zoom: 1;
+}
+.detailMain .brief li {
+	float: left;
+	display: inline;
+	width: 33%;
+	line-height: 22px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 2px 0;
+}
+

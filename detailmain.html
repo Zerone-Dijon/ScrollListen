@@ -1,0 +1,57 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>商品介绍</title>
+<link rel="stylesheet" type="text/css" href="css/detailmain.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<body>
+<div style="height:550px;"></div>
+<div class="detailMain content">
+  <div class="taber">
+    <div class="hd">
+      <div class="cf" id="j_fixed_tab" style="background-color:#ffffff;">
+        <ul class="tabNavs">
+          <li class="tabNav on"><a href="javascript:void(0);" title="商品介绍">商品介绍</a></li>
+          <li class="tabNav"><a href="javascript:void(0);" title="规格参数">规格参数</a></li>
+          <li class="tabNav"><a href="javascript:void(0);" title="包装清单">包装清单</a></li>
+          <li class="tabNav"><a href="javascript:void(0);" title="评价">评价<em class="blue"></em></a></li>
+        </ul>
+        <div class="more"><a class="btn-cart" href="javascript:;" title="加入购物车"><img src="images/shopcar.png">加入购物车</a></div>
+      </div>
+    </div>
+    
+    <!-- 商品介绍 -->
+    <div class="tabCon" id="tabCon-brief">
+      <ul class="brief">
+        <li>商品名称：（Test）红茶哨子陶瓷杯</li>
+        <li>商品编号：21002</li>
+        <li>商品订单总额满（￥30.00）包邮</li>
+        <li>品牌：<a href="http://www.dusun.com.cn/productList-brand-10533.html" target="_blank">思逸</a></li>
+        <li>上架时间：
+          2015-12-26 10:43:58 </li>
+      </ul>
+    </div>
+    <div style="height:2550px;"></div>
+  </div>
+</div>
+</div>
+<script language="javascript">
+    $(function(){
+	$('.tabNav').click(function(){
+		$('.tabNav').removeClass("on");
+		$(this).addClass("on"); 
+		});
+	});
+		// 监听滚动事件
+	$(window).scroll(function(){
+		 var h1 = $("#tabCon-brief").offset().top;
+		 if($(this).scrollTop()>=h1){
+			$("#j_fixed_tab").addClass("fixed");
+		} else {
+			$("#j_fixed_tab").removeClass("fixed"); 
+		}
+	});
+    </script>
+</body>
+</html>
